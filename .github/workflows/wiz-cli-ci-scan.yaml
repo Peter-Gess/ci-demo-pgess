@@ -47,7 +47,7 @@ jobs:
 
     - name: Run wiz-cli IaC scan
       run: |
-        ./wizcli iac scan --path ${{ env.SCAN_PATH }} --policy "$IAC_POLICY"
+        ./wizcli iac scan --policy "$IAC_POLICY"
 
     - name: Build the Docker image
       run: |
@@ -102,7 +102,7 @@ jobs:
 
     - name: Run wiz-cli IaC scan
       run: |
-        ./wizcli iac scan --path ${{ env.SCAN_PATH }} --policy "$IAC_POLICY"
+        ./wizcli iac scan --policy "$IAC_POLICY"
     
     - name: Apply Infrastructure as Code
       run: |
